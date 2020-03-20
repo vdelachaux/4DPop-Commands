@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+<macros>
+    
+	<macro 
+	    name="-" 
+	    in_menu="true" 
+	    type_ahead="false"
+	/>
+    
+	<macro 
+	    name="Syntax/?" 
+	    in_menu="true" 
+	    type_ahead="false" 
+	    version="2">
+		<text><method>macro_syntax</method></text>
+	</macro>
+    
+    <macro 
+        name="Documentation/¿" 
+        in_menu="true" 
+        type_ahead="false" 
+        version="2">
+        <text><method>macro_syntax</method></text>
+    </macro>
+    
+    <macro 
+        name="Documentation/∞" 
+        in_menu="true" 
+        type_ahead="false" 
+        version="2">
+        <text><method>macro_doc</method></text>
+    </macro>
+    
+</macros>
