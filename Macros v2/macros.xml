@@ -2,7 +2,8 @@
 <!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
 <macros>
     
-	<macro 
+	<!-- 
+<macro 
 	    name="-" 
 	    in_menu="true" 
 	    type_ahead="false"
@@ -31,5 +32,6 @@
         version="2">
         <text><method>macro_doc</method></text>
     </macro>
+ -->
     
 </macros>

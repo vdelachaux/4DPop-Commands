@@ -1,0 +1,277 @@
+{
+	"destination": "detailScreen",
+	"width": 328,
+	"height": 354,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 328,
+					"height": 31,
+					"fill": "#BDBCC3",
+					"stroke": "transparent"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 6,
+					"width": 316,
+					"height": 22,
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"box": {
+					"type": "input",
+					"top": 8,
+					"left": 36,
+					"width": 263,
+					"height": 16,
+					"dataSource": "<>Txt_request",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": ":xliff:search_placeholder",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/box.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterEdit"
+					]
+				},
+				"results": {
+					"type": "listbox",
+					"top": 39,
+					"left": 20,
+					"width": 289,
+					"height": 309,
+					"resizingMode": "legacy",
+					"dataSource": "<>Lstb_results",
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "22px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"headerHeight": "17px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#2164FA",
+					"fill": "transparent",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"method": "ObjectMethods/results.4dm",
+					"events": [
+						"onLosingFocus"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "<>tTxt_Results",
+							"width": 244,
+							"minWidth": 244,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#2164FA",
+							"fill": "#364675",
+							"alternateFill": "#344675",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onBeginDragOver"
+							],
+							"method": "ObjectMethods/Colonne1.4dm",
+							"header": {
+								"name": "Entête1",
+								"text": "xxxxxxxxxx",
+								"stroke": "#2164FA",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"stroke": "#2164FA",
+								"fill": "#364675",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "<>tLon_Results",
+							"dataSourceTypeHint": "number",
+							"width": 45,
+							"minWidth": 40,
+							"maxWidth": 45,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#2164FA",
+							"fill": "#364675",
+							"alternateFill": "#344675",
+							"textAlign": "right",
+							"verticalAlign": "middle",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"stroke": "#2164FA",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"stroke": "#2164FA",
+								"fill": "#364675",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"close": {
+					"type": "button",
+					"top": 8,
+					"left": 299,
+					"width": 16,
+					"height": 16,
+					"visibility": "hidden",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"focusable": false,
+					"icon": "/RESOURCES/Images/close.png",
+					"style": "custom",
+					"method": "ObjectMethods/close.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"automatic_font": {
+					"type": "input",
+					"top": 394,
+					"left": 0,
+					"width": 150,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#FF6600",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/automatic_font.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"version": {
+					"type": "input",
+					"top": 190,
+					"left": 1,
+					"width": 9,
+					"height": 154,
+					"stroke": "#AAAAAA",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAngle": 270,
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editionBuffering": {
+					"type": "input",
+					"top": 21,
+					"left": 342,
+					"width": 156,
+					"height": 12,
+					"stroke": "#FF6600",
+					"fontFamily": "monaco",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFF00",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 31,
+					"left": 0,
+					"width": 328,
+					"stroke": "#A2A2A2"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 353,
+					"left": 0,
+					"width": 328,
+					"stroke": "#A2A2A2"
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 7,
+					"left": 9,
+					"width": 19,
+					"height": 18,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture3.png"
+				}
+			}
+		}
+	]
+}

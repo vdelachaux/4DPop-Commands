@@ -1,0 +1,51 @@
+{
+	"00_dev": {
+		"methods": [
+			"00_Run",
+			"00_test",
+			"clean4dFolder",
+			"CREATE_MACROS_LANGUAGE",
+			"MONITOR_DELETED_METHODS"
+		]
+	},
+	"Macros": {
+		"methods": [
+			"macro_doc",
+			"macro_syntax"
+		]
+	},
+	"Private": {
+		"methods": [
+			"BUILD_LOCALIZATION_MACROS",
+			"Compiler_Arrays",
+			"Compiler_Methods",
+			"Compiler_Variables",
+			"env_Get_4DResourcesFolder",
+			"env_Get_InfoPlistValue",
+			"fakeCloseWindow",
+			"form_open_page",
+			"GET_COMMAND_LIST",
+			"getSyntax",
+			"helpUrlTemplate",
+			"init",
+			"noError",
+			"PREFERENCES",
+			"setOption"
+		],
+		"forms": [
+			"4DPOP_COMMANDS",
+			"COMMAND",
+			"PARAMETER"
+		]
+	},
+	"Shared": {
+		"groups": [
+			"Macros"
+		],
+		"methods": [
+			"4DPop_COMMAND_LIST",
+			"Commands"
+		]
+	},
+	"trash": {}
+}

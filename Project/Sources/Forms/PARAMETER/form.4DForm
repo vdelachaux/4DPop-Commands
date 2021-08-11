@@ -1,0 +1,225 @@
+{
+	"destination": "detailScreen",
+	"width": 327,
+	"height": 354,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 327,
+					"height": 354,
+					"stroke": "#FFFFFF"
+				},
+				"Line": {
+					"type": "line",
+					"top": 353,
+					"left": 0,
+					"width": 327,
+					"stroke": "#A2A2A2"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Help.Text": {
+					"type": "text",
+					"top": 6,
+					"left": 11,
+					"width": 251,
+					"height": 340,
+					"stroke": "#777777",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": ":xliff:HelpText"
+				},
+				"automatic_font": {
+					"type": "input",
+					"top": 394,
+					"left": 2,
+					"width": 150,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#FF6600",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/automatic_font.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"flagAlertVisible": {
+					"type": "input",
+					"top": 420,
+					"left": 0,
+					"width": 81,
+					"height": 13,
+					"dataSourceTypeHint": "number",
+					"stroke": "#FF6600",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"focusable": false,
+					"fill": "#FFFF00",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"window.cb": {
+					"type": "checkbox",
+					"top": 87,
+					"left": 14,
+					"width": 250,
+					"height": 17,
+					"text": ":xliff:popupWindow",
+					"stroke": "#2164FA",
+					"focusable": false,
+					"method": "ObjectMethods/window.cb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"both.cb": {
+					"type": "checkbox",
+					"top": 238,
+					"left": 14,
+					"width": 250,
+					"height": 17,
+					"text": ":xliff:SearchLanguage",
+					"stroke": "#2164FA",
+					"focusable": false,
+					"method": "ObjectMethods/both.cb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"drag.cb": {
+					"type": "checkbox",
+					"top": 186,
+					"left": 34,
+					"width": 200,
+					"height": 17,
+					"text": ":xliff:PasteWithComments",
+					"stroke": "#2164FA",
+					"focusable": false,
+					"method": "ObjectMethods/drag.cb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"position.cb": {
+					"type": "checkbox",
+					"top": 209,
+					"left": 34,
+					"width": 238,
+					"height": 17,
+					"text": ":xliff:belowTheCommand",
+					"stroke": "#2164FA",
+					"focusable": false,
+					"method": "ObjectMethods/position.cb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"number.cb": {
+					"type": "checkbox",
+					"top": 130,
+					"left": 14,
+					"width": 250,
+					"height": 17,
+					"text": ":xliff:showCommandNumber",
+					"stroke": "#2164FA",
+					"focusable": false,
+					"method": "ObjectMethods/number.cb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"syntax.cb": {
+					"type": "checkbox",
+					"top": 161,
+					"left": 14,
+					"width": 250,
+					"height": 17,
+					"text": ":xliff:PasteWithSyntax",
+					"stroke": "#2164FA",
+					"focusable": false,
+					"method": "ObjectMethods/syntax.cb.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lang.label": {
+					"type": "text",
+					"top": 15,
+					"left": 14,
+					"width": 126,
+					"height": 16,
+					"stroke": "#2164FA",
+					"textAlign": "left",
+					"text": ":xliff:Language"
+				},
+				"lang.popup": {
+					"type": "dropdown",
+					"top": 41,
+					"left": 29,
+					"width": 233,
+					"height": 20,
+					"dataSource": "<>tTxt_Languages",
+					"focusable": false,
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/lang.popup.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"alert": {
+					"type": "text",
+					"top": 105,
+					"left": 29,
+					"width": 248,
+					"height": 13,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": ":xliff:ChangeWillBeEffectiveTheNextTime"
+				}
+			}
+		}
+	]
+}

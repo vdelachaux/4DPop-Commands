@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="20">
+	<com.4d>
+		<interface>
+			<misc formula_editor_with_full_lists="false"/>
+			<user can_change_password="true" display_list="false" print_progress="false"/>
+			<developper allow_read_only_structure="true"/>
+		</interface>
+		<database>
+			<cache size_fixed="32" size_maximum="100" size_minimum="16" size_reserved="128"/>
+			<cpu_priority/>
+			<data_storage allow_data_read_only="true"/>
+			<misc standard_xpath="false"/>
+		</database>
+		<compiler>
+			<options compilation_path="3" fat_binary="true" target="all"/>
+			<typage default_for_button="2"/>
+			<method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
+		</compiler>
+		<web>
+			<standalone_server>
+				<misc use_4dvar_comments="true"/>
+				<options>
+					<web_processes timeout_for_inactives="18000"/>
+					<text_conversion standard_set="ISO-8859-1"/>
+					<cache cache_max_size="512" use_4d_web_cache="false"/>
+					<web_passwords generic_web_user="1"/>
+				</options>
+				<configuration automatic_session_management="true" ip_address="0" listening_address="::" session_mode="2">
+					<hosts>
+						<host home_page="index.html" html_root="./DossierWeb/" id="0" name="Default"/>
+					</hosts>
+				</configuration>
+				<log>
+					<backup daily="" hourly="" monthly="" size="0" weekly=""/>
+				</log>
+			</standalone_server>
+			<remote>
+				<misc use_4dvar_comments="true"/>
+				<options>
+					<web_processes timeout_for_inactives="18000"/>
+					<cache cache_max_size="524288" use_4d_web_cache="false"/>
+					<web_passwords generic_web_user="1"/>
+				</options>
+				<configuration allow_ssl="false" automatic_session_management="true" ip_address="0" session_mode="2"/>
+				<webservices allow_requests="false"/>
+			</remote>
+		</web>
+		<general execute_host_database_event="true">
+			<mover always_display_dialog="2"/>
+		</general>
+		<sql>
+			<publication port_number="1919"/>
+		</sql>
+		<server>
+			<network>
+				<options publication_name="MacroPack_VF" use_legacy_network_layer="false"/>
+			</network>
+			<misc/>
+		</server>
+		<deployment>
+			<options/>
+		</deployment>
+	</com.4d>
+</preferences>
