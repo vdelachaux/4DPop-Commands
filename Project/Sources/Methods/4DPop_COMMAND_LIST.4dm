@@ -27,7 +27,7 @@ End if
 // Initialisations
 $Lon_parameters:=Count parameters:C259
 
-init
+INIT
 
 If (Asserted:C1132($Lon_parameters>=1; "Missing parameter"))
 	

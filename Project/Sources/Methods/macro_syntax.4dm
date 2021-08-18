@@ -20,7 +20,7 @@ If (Asserted:C1132($Lon_parameters>=0; "Missing parameter"))
 	
 	//NO PARAMETERS REQUIRED
 	
-	init
+	INIT
 	
 	GET MACRO PARAMETER:C997(Highlighted method text:K5:18; $Txt_selected)
 	
@@ -80,7 +80,7 @@ If (Length:C16($Txt_selected)>0)
 			
 			<>tTxt_commands{0}:=$Txt_selected
 			
-			Commands
+			popCommands
 			
 			//…………………………………………………
 	End case 
@@ -89,7 +89,7 @@ Else
 	
 	CLEAR VARIABLE:C89(<>tTxt_commands{0})
 	
-	Commands
+	popCommands
 	
 End if 
 

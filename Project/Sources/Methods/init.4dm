@@ -15,7 +15,7 @@ C_LONGINT:C283($Lon_i; $Lon_parameters; $Lon_x)
 C_TEXT:C284($Dom_help; $Txt_4dResourcesFolder; $Txt_path; $Txt_XSL)
 
 If (False:C215)
-	C_BOOLEAN:C305(init; $1)
+	C_BOOLEAN:C305(INIT; $1)
 End if 
 
 // ----------------------------------------------------
@@ -78,7 +78,8 @@ If (Not:C34(<>Boo_inited) | $Boo_init)
 	If (Asserted:C1132(Find in array:C230($tTxt_Components; "4DPop")>0; "The component 4DPop isn't installed or loaded"))
 		
 		//$Txt_4dResourcesFolder:=4DPop_applicationFolder(kResources)
-		EXECUTE METHOD:C1007("4DPop_applicationFolder"; $Txt_4dResourcesFolder; kResources)
+		//EXECUTE METHOD("4DPop_applicationFolder"; $Txt_4dResourcesFolder; kResources)
+		$Txt_4dResourcesFolder:=Get 4D folder:C485(-1)
 		
 		//$Txt_4dLanguage:=4DPop_applicationLanguage
 		EXECUTE METHOD:C1007("4DPop_applicationLanguage"; $tTxt_languages{0})

@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
 
 //init
-C_BOOLEAN:C305(init; $1)
+C_BOOLEAN:C305(INIT; $1)
 
 //preferences
 C_TEXT:C284(PREFERENCES; $1)
@@ -11,7 +11,7 @@ C_POINTER:C301(PREFERENCES; ${2})
 C_LONGINT:C283(setOption; $1)
 
 //Commands
-C_POINTER:C301(Commands; $1)
+C_POINTER:C301(popCommands; $1)
 
 //getSyntax
 C_TEXT:C284(getSyntax; $0)

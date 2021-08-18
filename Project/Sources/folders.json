@@ -27,7 +27,6 @@
 			"GET_COMMAND_LIST",
 			"getSyntax",
 			"helpUrlTemplate",
-			"init",
 			"noError",
 			"PREFERENCES",
 			"setOption"
@@ -44,7 +43,7 @@
 		],
 		"methods": [
 			"4DPop_COMMAND_LIST",
-			"Commands"
+			"popCommands"
 		]
 	},
 	"trash": {}

@@ -1,6 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-   <!--                 Translation file.This file is distributed under the same license as the product package.-->
-<xliff version="1.0">
+<?xml version="1.0" encoding="utf-8"?>
+
+   <!--                 Translation file.
+This file is distributed under the same license as the product package.-->
+
+<xliff version="1.0">
    <file datatype="x-STR#" original="undefined" source-language="en" target-language="en">
       <header>
          <prop-group name="Xliff-Editor.4dbase">
@@ -22,8 +25,20 @@
                <target>URL:</target>
             </trans-unit>
             <trans-unit id="1" resname="HelpText">
-               <source>To find a command, type one or more keywords separated by space in the search box.  When some commands are found, you can select one with the arrow keys then:- Double-click on a command name to open the online html help in your browser. Type "Enter" if the dialog is opened via the macro does the same.- Drag a command from the list to the method editor to paste command &amp; syntax. If the dialog is opened via the macro, a "Carriage Return" closes the window and paste the command in the code editor.- Press Alt key during drag, the pasted text will be "Command name (command)".</source>
-               <target>To find a command, type one or more keywords separated by space in the search box.  When some commands are found, you can select one with the arrow keys then:- Double-click on a command name to open the online html help in your browser. Type "Enter" if the dialog is opened via the macro does the same.- Drag a command from the list to the method editor to paste command &amp; syntax. If the dialog is opened via the macro, a "Carriage Return" closes the window and paste the command in the code editor.- Press Alt key during drag, the pasted text will be "Command name (command)".</target>
+               <source>To find a command, type one or more keywords separated by space in the search box.  When some commands are found, you can select one with the arrow keys then:
+
+- Double-click on a command name to open the online html help in your browser. Type "Enter" if the dialog is opened via the macro does the same.
+
+- Drag a command from the list to the method editor to paste command &amp; syntax. If the dialog is opened via the macro, a "Carriage Return" closes the window and paste the command in the code editor.
+
+- Press Alt key during drag, the pasted text will be "Command name (command)".</source>
+               <target>To find a command, type one or more keywords separated by space in the search box.  When some commands are found, you can select one with the arrow keys then:
+
+- Double-click on a command name to open the online html help in your browser. Type "Enter" if the dialog is opened via the macro does the same.
+
+- Drag a command from the list to the method editor to paste command &amp; syntax. If the dialog is opened via the macro, a "Carriage Return" closes the window and paste the command in the code editor.
+
+- Press Alt key during drag, the pasted text will be "Command name (command)".</target>
             </trans-unit>
             <trans-unit id="6" resname="Lang_1" translate="no">
                <source>Français</source>

@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd">
 <macros>
-    
-	<!-- 
+  <!-- 
 <macro 
 	    name="-" 
 	    in_menu="true" 
@@ -33,5 +32,4 @@
         <text><method>macro_doc</method></text>
     </macro>
  -->
-    
 </macros>
