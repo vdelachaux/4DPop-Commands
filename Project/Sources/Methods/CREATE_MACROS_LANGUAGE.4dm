@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true}
+//%attributes = {}
 // ----------------------------------------------------
 // Project method : CREATE_MACROS_LANGUAGE
 // Database: 4DPop Commands
@@ -21,6 +21,8 @@ running 4D version.
 // ----------------------------------------------------
 BUILD_LOCALIZATION_MACROS("fr")
 BUILD_LOCALIZATION_MACROS("en")
+
+BEEP:C151
 
 // ----------------------------------------------------
 // End
