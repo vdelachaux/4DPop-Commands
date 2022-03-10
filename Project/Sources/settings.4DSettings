@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="20">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="21">
 	<com.4d>
 		<interface>
 			<misc formula_editor_with_full_lists="false"/>
@@ -13,7 +13,7 @@
 		</database>
 		<compiler>
 			<options compilation_path="3" fat_binary="true" target="all"/>
-			<typage default_for_button="2"/>
+			<typage default_for_button="2" default_for_numeric="1"/>
 			<method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
 		</compiler>
 		<web>
