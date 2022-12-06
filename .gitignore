@@ -37,3 +37,6 @@ Resources/en.xml
 Resources/fr.xml
 Libraries/lib4d-arm64.dylib
 Build/Components/4DPop Commands.4dbase/_gsdata_
+Build/Components/4DPop Commands.dmg
+Build/Components/4DPop Commands.4dbase/Resources/fr to en.xml
+Build/Components/4DPop Commands.4dbase/Resources/en to fr.xml
