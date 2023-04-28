@@ -3,6 +3,7 @@
 		"methods": [
 			"00_Run",
 			"00_test",
+			"BUILD_LOCALIZATION_MACROS",
 			"clean4dFolder",
 			"CREATE_MACROS_LANGUAGE",
 			"MONITOR_DELETED_METHODS"
@@ -16,7 +17,6 @@
 	},
 	"Private": {
 		"methods": [
-			"BUILD_LOCALIZATION_MACROS",
 			"Compiler_Arrays",
 			"Compiler_Methods",
 			"Compiler_Variables",
@@ -27,13 +27,13 @@
 			"GET_COMMAND_LIST",
 			"getSyntax",
 			"helpUrlTemplate",
+			"INIT",
 			"noError",
-			"PREFERENCES",
 			"setOption"
 		],
 		"forms": [
-			"4DPOP_COMMANDS",
 			"COMMAND",
+			"COMMANDS",
 			"PARAMETER"
 		]
 	},
@@ -42,8 +42,9 @@
 			"Macros"
 		],
 		"methods": [
-			"4DPop_COMMAND_LIST",
-			"popCommands"
+			"_4DPopCommands",
+			"commands",
+			"COMPILER_4DPop"
 		]
 	},
 	"trash": {}

@@ -41,7 +41,7 @@ Else
 	
 End if 
 
-PREFERENCES("syntaxoptions.set"; -><>Lon_options)
+pref.set("syntaxoptions"; <>Lon_options)
 
 // ----------------------------------------------------
 // End

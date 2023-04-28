@@ -1,2 +1,2 @@
 //%attributes = {"invisible":true}
-commands
+C_OBJECT:C1216(_4DPopCommands; $0)

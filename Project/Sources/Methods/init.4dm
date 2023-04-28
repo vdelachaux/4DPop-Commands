@@ -45,10 +45,10 @@ If (Not:C34(<>Boo_inited) | $Boo_init)
 	
 	Compiler_Arrays
 	
-	PREFERENCES("syntaxoptions.get"; -><>Lon_options)
+	<>Lon_options:=pref.get("syntaxoptions")
 	
-	//prepare the XSL Query {
-	$Txt_XSL:="<?xml version=\"1.0\" encoding=\"utf-8\"?>"\
+	////prepare the XSL Query {
+	//$Txt_XSL:="<?xml version=\"1.0\" encoding=\"utf-8\"?>"\
 		+"<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:dyn=\"http://exslt.org/dynamic\">"\
 		+"<xsl:output method=\"xml\"/>"\
 		+"<xsl:param name=\"xpath_in\"/>"\
@@ -59,8 +59,8 @@ If (Not:C34(<>Boo_inited) | $Boo_init)
 		+"</xsl:template>"\
 		+"</xsl:stylesheet>"
 	
-	CONVERT FROM TEXT:C1011($Txt_XSL; "UTF-8"; <>Blb_evaluate)
-	//}
+	//CONVERT FROM TEXT($Txt_XSL; "UTF-8"; <>Blb_evaluate)
+	////}
 	
 	//Default language
 	ARRAY TEXT:C222($tTxt_languages; 0x0000)
@@ -71,30 +71,20 @@ If (Not:C34(<>Boo_inited) | $Boo_init)
 	APPEND TO ARRAY:C911($tTxt_languages; "ja")
 	APPEND TO ARRAY:C911($tTxt_languages; "pt")
 	
-	//What's the language of the 4D runtime {
-	ARRAY TEXT:C222($tTxt_Components; 0x0000)
-	COMPONENT LIST:C1001($tTxt_Components)
-	
-	If (Asserted:C1132(Find in array:C230($tTxt_Components; "4DPop")>0; "The component 4DPop isn't installed or loaded"))
-		
-		//$Txt_4dResourcesFolder:=4DPop_applicationFolder(kResources)
-		//EXECUTE METHOD("4DPop_applicationFolder"; $Txt_4dResourcesFolder; kResources)
-		$Txt_4dResourcesFolder:=Get 4D folder:C485(-1)
-		
-		//$Txt_4dLanguage:=4DPop_applicationLanguage
-		EXECUTE METHOD:C1007("4DPop_applicationLanguage"; $tTxt_languages{0})
-		
-	Else 
-		
-		$tTxt_languages{0}:=Get database localization:C1009(User system localization:K5:23)
-		
-	End if 
+	$tTxt_languages{0}:=Get database localization:C1009(User system localization:K5:23)
 	
 	If (Find in array:C230($tTxt_languages; $tTxt_languages{0})<0)
 		
 		$tTxt_languages{0}:="en"  //default to english
 		
 	End if 
+	
+	var $folder : 4D:C1709.Folder
+	$folder:=Is macOS:C1572\
+		 ? Folder:C1567(Application file:C491; fk platform path:K87:2).folder("Contents/Resources")\
+		 : File:C1566(Application file:C491; fk platform path:K87:2).parent.folder("Resources")
+	
+	$Txt_4dResourcesFolder:=$folder.platformPath
 	
 	//Get syntax help reference {
 	$Txt_path:=$Txt_4dResourcesFolder\
@@ -137,7 +127,7 @@ If (Not:C34(<>Boo_inited) | $Boo_init)
 	End for 
 	
 	//Get the user preferences
-	PREFERENCES("syntaxlanguage.get"; ->$Lon_x)
+	$Lon_x:=pref.get("syntaxlanguage")
 	
 	If ($Lon_x<=0)\
 		 | ($Lon_x>Size of array:C274(<>tTxt_Languages))

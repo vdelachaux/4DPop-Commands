@@ -1,8 +1,4 @@
-C_LONGINT:C283($Lon_language)
-
-$Lon_language:=Self:C308->
-
-PREFERENCES("syntaxlanguage.set"; Self:C308)
+pref.set("syntaxlanguage"; Self:C308->)
 
 ARRAY TEXT:C222($tTxt_languages; 0x0000)
 APPEND TO ARRAY:C911($tTxt_languages; "fr")

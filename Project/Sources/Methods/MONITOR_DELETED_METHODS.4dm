@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 //  // ----------------------------------------------------
 //  // Project method: MONITOR_DELETED_METHODS
 //  // Database: 4DPop Commands

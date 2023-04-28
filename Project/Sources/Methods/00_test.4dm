@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 // **
 // @method 00_test
 // @uid B9AEC0C3AECC4EDB8AB7BF9B39DDE978

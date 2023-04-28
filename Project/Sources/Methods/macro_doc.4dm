@@ -80,7 +80,7 @@ If (Length:C16($Txt_selected)>0)
 			
 			<>tTxt_commands{0}:=$Txt_selected
 			
-			popCommands
+			commands
 			
 			//…………………………………………………
 	End case 
@@ -89,7 +89,7 @@ Else
 	
 	CLEAR VARIABLE:C89(<>tTxt_commands{0})
 	
-	popCommands
+	commands
 	
 End if 
 

@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true}
+//%attributes = {}
 // ----------------------------------------------------
 // Project method : BUILD_LOCALIZATION_MACROS
 // Database: 4DPop Commands
@@ -25,7 +25,12 @@ var $file : 4D:C1709.File
 // Initialisations
 If (Asserted:C1132(Count parameters:C259>=1; "Missing parameter"))
 	
-	$file:=Folder:C1567(Get 4D folder:C485(-1); fk platform path:K87:2).file("fr.lproj/4D_CommandsFR.xlf")
+	var $folder : 4D:C1709.Folder
+	$folder:=Is macOS:C1572\
+		 ? Folder:C1567(Application file:C491; fk platform path:K87:2).folder("Contents/Resources")\
+		 : File:C1566(Application file:C491; fk platform path:K87:2).parent.folder("Resources")
+	
+	$file:=$folder.file("fr.lproj/4D_CommandsFR.xlf")
 	
 Else 
 	
