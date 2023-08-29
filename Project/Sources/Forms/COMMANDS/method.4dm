@@ -42,8 +42,6 @@ Case of
 		
 		SET TIMER:C645(0)
 		
-		C_LONGINT:C283($Lon_bottom; $Lon_left; $Lon_right; $Lon_top; $Lon_windowRef)
-		
 		OBJECT GET COORDINATES:C663(*; "splitter"; $Lon_left; $Lon_top; $Lon_right; $Lon_bottom)
 		//If (splitter>-30)
 		If ($Lon_right>33)
