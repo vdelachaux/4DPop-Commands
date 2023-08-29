@@ -15,10 +15,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Check out 4DPop
-      uses: actions/checkout@v3
-      with:
-        repository: vdelachaux/4DPop
-        path: 4D-Pop.4dbase
     - name: Build
       uses: 4d/build4d-action@main
+      with:
+        product-line: vcs
+        version: vcs
+        build: official
+        token: ${{ secrets.DLTK }}
