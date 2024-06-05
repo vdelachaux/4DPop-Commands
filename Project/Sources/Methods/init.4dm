@@ -15,7 +15,7 @@ C_LONGINT:C283($Lon_i; $Lon_parameters; $Lon_x)
 C_TEXT:C284($Dom_help; $Txt_4dResourcesFolder; $Txt_path; $Txt_XSL)
 
 If (False:C215)
-	C_BOOLEAN:C305(INIT; $1)
+	C_BOOLEAN:C305(init; $1)
 End if 
 
 // ----------------------------------------------------
@@ -45,19 +45,19 @@ If (Not:C34(<>Boo_inited) | $Boo_init)
 	
 	Compiler_Arrays
 	
-	<>Lon_options:=pref.get("syntaxoptions")
+	<>Lon_options:=Try(pref.get("syntaxoptions"))
 	
 	////prepare the XSL Query {
 	//$Txt_XSL:="<?xml version=\"1.0\" encoding=\"utf-8\"?>"\
-		+"<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:dyn=\"http://exslt.org/dynamic\">"\
-		+"<xsl:output method=\"xml\"/>"\
-		+"<xsl:param name=\"xpath_in\"/>"\
-		+"<xsl:template match=\"/\">"\
-		+"<value>"\
-		+"<xsl:value-of select=\"dyn:evaluate($xpath_in)\"/>"\
-		+"</value>"\
-		+"</xsl:template>"\
-		+"</xsl:stylesheet>"
+				+"<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:dyn=\"http://exslt.org/dynamic\">"\
+				+"<xsl:output method=\"xml\"/>"\
+				+"<xsl:param name=\"xpath_in\"/>"\
+				+"<xsl:template match=\"/\">"\
+				+"<value>"\
+				+"<xsl:value-of select=\"dyn:evaluate($xpath_in)\"/>"\
+				+"</value>"\
+				+"</xsl:template>"\
+				+"</xsl:stylesheet>"
 	
 	//CONVERT FROM TEXT($Txt_XSL; "UTF-8"; <>Blb_evaluate)
 	////}
@@ -127,7 +127,7 @@ If (Not:C34(<>Boo_inited) | $Boo_init)
 	End for 
 	
 	//Get the user preferences
-	$Lon_x:=pref.get("syntaxlanguage")
+	$Lon_x:=Try(pref.get("syntaxlanguage"))
 	
 	If ($Lon_x<=0)\
 		 | ($Lon_x>Size of array:C274(<>tTxt_Languages))

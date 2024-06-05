@@ -2,7 +2,6 @@
 	"00_dev": {
 		"methods": [
 			"00_Run",
-			"00_test",
 			"BUILD_LOCALIZATION_MACROS",
 			"clean4dFolder",
 			"CREATE_MACROS_LANGUAGE",
@@ -27,7 +26,6 @@
 			"GET_COMMAND_LIST",
 			"getSyntax",
 			"helpUrlTemplate",
-			"INIT",
 			"noError",
 			"setOption"
 		],
