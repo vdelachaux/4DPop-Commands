@@ -1,14 +1,14 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284(<>Txt_Url)
-C_TEXT:C284(<>Txt_request)
-C_BLOB:C604(<>Blb_help)
-C_LONGINT:C283(<>Lon_timerEvent; <>Lon_options)
-C_BOOLEAN:C305(<>Boo_inited)
+_O_C_TEXT:C284(<>Txt_Url)
+_O_C_TEXT:C284(<>Txt_request)
+_O_C_BLOB:C604(<>Blb_help)
+_O_C_LONGINT:C283(<>Lon_timerEvent; <>Lon_options)
+_O_C_BOOLEAN:C305(<>Boo_inited)
 
-C_LONGINT:C283(splitter)
+_O_C_LONGINT:C283(splitter)
 
 var pref : cs:C1710.pop.Preferences
-pref:=pref || Try(pop.Preferences.new("Commands"))
+pref:=pref || Try(cs:C1710.pop.Preferences.new("Commands"))
 
 If (pref#Null:C1517)
 	
