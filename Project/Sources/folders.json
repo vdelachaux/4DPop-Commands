@@ -41,8 +41,7 @@
 		],
 		"methods": [
 			"_4DPopCommands",
-			"commands",
-			"COMPILER_4DPop"
+			"commands"
 		]
 	},
 	"trash": {}

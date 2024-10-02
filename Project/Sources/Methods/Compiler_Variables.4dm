@@ -1,11 +1,11 @@
 //%attributes = {"invisible":true}
-_O_C_TEXT:C284(<>Txt_Url)
-_O_C_TEXT:C284(<>Txt_request)
-_O_C_BLOB:C604(<>Blb_help)
-_O_C_LONGINT:C283(<>Lon_timerEvent; <>Lon_options)
-_O_C_BOOLEAN:C305(<>Boo_inited)
+var <>Txt_Url : Text
+var <>Txt_request : Text
+var <>Blb_help : Blob
+var <>Lon_timerEvent; <>Lon_options : Integer
+var <>Boo_inited : Boolean
 
-_O_C_LONGINT:C283(splitter)
+var splitter : Integer
 
 var pref : cs:C1710.pop.Preferences
 pref:=pref || Try(cs:C1710.pop.Preferences.new("Commands"))
@@ -19,5 +19,3 @@ If (pref#Null:C1517)
 		})
 	
 End if 
-
-
