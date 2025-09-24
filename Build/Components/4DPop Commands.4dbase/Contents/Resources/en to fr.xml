@@ -1203,7 +1203,7 @@
   </macro>
 
   <macro in_menu="false" in_toolbar="false" name="PROCESS PROPERTIES">
-    <text>INFORMATIONS PROCESS</text>
+    <text>_o_INFORMATIONS PROCESS</text>
   </macro>
 
   <macro in_menu="false" in_toolbar="false" name="User in group">
@@ -4814,8 +4814,8 @@
     <text>WP RÉINITIALISER ATTRIBUTS</text>
   </macro>
 
-  <macro in_menu="false" in_toolbar="false" name="WP GET ATTRIBUTES">
-    <text>WP LIRE ATTRIBUTS</text>
+  <macro in_menu="false" in_toolbar="false" name="WP Get attributes">
+    <text>WP Lire attributs</text>
   </macro>
 
   <macro in_menu="false" in_toolbar="false" name="WP Paragraph range">
@@ -4926,16 +4926,16 @@
     <text>LISTBOX FIXER HAUTEUR LIGNE</text>
   </macro>
 
-  <macro in_menu="false" in_toolbar="false" name="WP INSERT DOCUMENT">
-    <text>WP INSÉRER DOCUMENT</text>
+  <macro in_menu="false" in_toolbar="false" name="WP Insert document body">
+    <text>WP Insérer corps document</text>
   </macro>
 
   <macro in_menu="false" in_toolbar="false" name="WP Page count">
     <text>WP Nombre de pages</text>
   </macro>
 
-  <macro in_menu="false" in_toolbar="false" name="WP INSERT BREAK">
-    <text>WP INSÉRER RUPTURE</text>
+  <macro in_menu="false" in_toolbar="false" name="WP Insert break">
+    <text>WP Insérer rupture</text>
   </macro>
 
   <macro in_menu="false" in_toolbar="false" name="WP NEW BOOKMARK">
@@ -5006,8 +5006,8 @@
     <text>BLOB vers paramètres impression</text>
   </macro>
 
-  <macro in_menu="false" in_toolbar="false" name="WP INSERT PICTURE">
-    <text>WP INSÉRER IMAGE</text>
+  <macro in_menu="false" in_toolbar="false" name="WP Insert picture">
+    <text>WP Insérer image</text>
   </macro>
 
   <macro in_menu="false" in_toolbar="false" name="INVOKE ACTION">
@@ -5470,8 +5470,8 @@
     <text>WP Lire formules</text>
   </macro>
 
-  <macro in_menu="false" in_toolbar="false" name="WP INSERT FORMULA">
-    <text>WP INSÉRER FORMULE</text>
+  <macro in_menu="false" in_toolbar="false" name="WP Insert formula">
+    <text>WP Insérer formule</text>
   </macro>
 
   <macro in_menu="false" in_toolbar="false" name="New class">
@@ -5672,6 +5672,42 @@
 
   <macro in_menu="false" in_toolbar="false" name="WP TABLE SPLIT CELLS">
     <text>WP TABLEAU DIVISER CELLULES</text>
+  </macro>
+
+  <macro in_menu="false" in_toolbar="false" name="Session storage by id">
+    <text>Session storage par id</text>
+  </macro>
+
+  <macro in_menu="false" in_toolbar="false" name="SET WINDOW DOCUMENT ICON">
+    <text>CHANGER DOCUMENT ICON FENETRE</text>
+  </macro>
+
+  <macro in_menu="false" in_toolbar="false" name="WP DELETE SECTION">
+    <text>WP SUPPRIMER SECTION</text>
+  </macro>
+
+  <macro in_menu="false" in_toolbar="false" name="Process info">
+    <text>Lire info process</text>
+  </macro>
+
+  <macro in_menu="false" in_toolbar="false" name="Session info">
+    <text>Lire info session</text>
+  </macro>
+
+  <macro in_menu="false" in_toolbar="false" name="WA SET CONTEXT">
+    <text>WA FIXER CONTEXTE</text>
+  </macro>
+
+  <macro in_menu="false" in_toolbar="false" name="WA Get context">
+    <text>WA Lire contexte</text>
+  </macro>
+
+  <macro in_menu="false" in_toolbar="false" name="OBJECT SET DATA SOURCE FORMULA">
+    <text>OBJET FIXER SOURCE DONNÉES FORMULE</text>
+  </macro>
+
+  <macro in_menu="false" in_toolbar="false" name="OBJECT Get data source formula">
+    <text>OBJET Lire source données formule</text>
   </macro>
 
 </macros>
