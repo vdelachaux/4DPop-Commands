@@ -4,13 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/4D.icns</key>
+		<data>
+		2s6u3TnACZ5DMs0VXc0rNnTw79A=
+		</data>
 		<key>Resources/4DPop.json</key>
 		<data>
-		iTedQhGXvBFa7VpcPzLE0B/ftEE=
-		</data>
-		<key>Resources/4DPop.png</key>
-		<data>
-		5ddAWRsaNpcxVAoVV2YMXTEihgY=
+		L05QCHia0yOqEIMrQZ5gZ3JC3H8=
 		</data>
 		<key>Resources/Common/4d.png</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Resources/InfoPlist.strings</key>
 		<data>
-		+5j07HCCD86dN7GQlyJbpM5LddU=
+		R5LVt13Tq92FN2C/ihXZrJ7eFqk=
 		</data>
 		<key>Resources/en to fr.xml</key>
 		<data>
@@ -300,6 +300,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/logo.svg</key>
+		<data>
+		aVrstq9kDtMlszzJu4FPr0wOY8s=
+		</data>
 		<key>Resources/php.ini</key>
 		<data>
 		jNkRbpHyUDF8q8bhrWIi2NNZ2yA=
@@ -311,7 +315,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			E7C+9YrqQCa3W3qmv8MShcmzfks=
+			v4CVzf5XyJP0sYvXm8RrLv7CTw4=
 			</data>
 			<key>requirement</key>
 			<string>identifier "4DPop Commands.4DZ" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = DYRKW64QA9</string>
@@ -320,21 +324,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QS0wYwQgPbCHOFFGRbjwKxO3yKEbUAKJxpvByMfHYV4=
+			9An1r/bzwfMBBNLxd9RiRjBnbir44bJ29m4xTRyEh5s=
+			</data>
+		</dict>
+		<key>Resources/4D.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qt1CkgP3Q5ToVczjBGtzBSyuGxr2+oA1RFPwhXEav6w=
 			</data>
 		</dict>
 		<key>Resources/4DPop.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oy5SMkCIp95VuDJsODhBPs2+hHvn2CfMEDg2x2LoMrA=
-			</data>
-		</dict>
-		<key>Resources/4DPop.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kLF9L6a3fmIq1Qcf+hF7RiMTkzu+g6WLtSAuAF8F3Hs=
+			ZE0pvUvcPTk58zvsHBuoox0ZDX2liU9Ru5Gff6x/HCc=
 			</data>
 		</dict>
 		<key>Resources/Common/4d.png</key>
@@ -446,7 +450,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9HaBnXrcku4JVl6Glvvt9X1XshhlYcJMrG6NnSEyFc=
+			hgXr9kZa6MkYkDCF3RCSKU24DzCZBkeiGA2ui9FsHX4=
 			</data>
 		</dict>
 		<key>Resources/en to fr.xml</key>
@@ -678,6 +682,13 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>Resources/logo.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ahKrC9HKz8VXMPKByXNvnuCBb80f6Q+3Y9pCEqGacI0=
+			</data>
 		</dict>
 		<key>Resources/php.ini</key>
 		<dict>
